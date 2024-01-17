@@ -5,43 +5,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Englewood Family Dentistry</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="./output.css">
+    <script src="./index.js"></script>
 </head>
 
-<body>
-    <div class="content-wrapper">
-        <nav>
-            <div class="logo"><img src="img/diversity_1.svg" alt="heart with people" class="logo-img" />
-                <h2 class="logo-text">Englewood Family Dentistry</h2>
+<body class="font-sans bg-light-blue text-green">
+    <div class="container mx-auto px-5 max-w-screen-xl min-w-[400px]">
+        <nav class="bg-light-blue flex flex-wrap items-end justify-between py-8">
+            <a href="/" class="flex items-center gap-5 rtl:space-x-reverse">
+                <img src="./img/diversity_1.svg" class="h-8 mt-[-2px]" alt="heart with family icon" />
+                <span class="text-xl font-bold">Englewood Family
+                    Dentistry</span>
+            </a>
+            <button
+                class="text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none active:outline-none"
+                onpointerdown="toggleMenu()">
+                <img src="./img/menu.svg" class="h-8" alt="open menu icon" id="open-menu" />
+                <img src="./img/close.svg" class="h-8 hidden" alt="close menu icon" id="close-menu" />
+            </button>
+            <div class="hidden w-full lg:block lg:w-auto" id="nav-links">
+                <ul class="flex flex-col font-medium mt-4 lg:mt-0 lg:flex-row gap-5 lg:items-center">
+                    <li><a href="/" class="flex w-full hover:text-light-green">Home</a></li>
+                    <li class="group">
+                        <a
+                            class="flex items-center justify-start w-full lg:hover:text-light-green uppercase lg:normal-case cursor-default lg:cursor-pointer">About<img
+                                src="./img/expand_more.svg" class="h-6 mt-[-2px] hidden lg:inline"
+                                alt="open menu icon" /></a>
+                        <div class="z-10 lg:hidden lg:group-hover:block lg:absolute">
+                            <ul class="">
+                                <li>
+                                    <a href="/meet-dr-jethani" class="flex hover:text-light-green">Meet Dr. Kamlesh
+                                        Jethani</a>
+                                </li>
+                                <li>
+                                    <a href="/payment" class="flex hover:text-light-green">Insurance & Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="group">
+                        <a
+                            class="flex items-center justify-start w-full lg:hover:text-light-green uppercase lg:normal-case cursor-default lg:cursor-pointer">Services<img
+                                src="./img/expand_more.svg" class="h-6 mt-[-2px] hidden lg:inline"
+                                alt="open menu icon" /></a>
+                        <div class="z-10 lg:hidden lg:group-hover:block lg:absolute">
+                            <ul class="">
+                                <li>
+                                    <a href="/cosmetic-whitening" class="flex hover:text-light-green">Cosmetic
+                                        Whitening</a>
+                                </li>
+                                <li>
+                                    <a href="/cosmetic-dentistry" class="flex hover:text-light-green">Cosmetic Dentistry
+                                        & Bonding</a>
+                                </li>
+                                <li>
+                                    <a href="/implants-bridges" class="flex hover:text-light-green">Dental Implants &
+                                        Bridges</a>
+                                </li>
+                                <li>
+                                    <a href="/natural-fillings" class="flex hover:text-light-green">Natural Fillings</a>
+                                </li>
+                                <li>
+                                    <a href="/pediatric-dentistry" class="flex hover:text-light-green">Pediatric
+                                        Dentistry</a>
+                                </li>
+                                <li>
+                                    <a href="/soft-tissue" class="flex hover:text-light-green">Soft Tissue
+                                        Management</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/forms" class="flex w-full hover:text-light-green">Patient Forms</a></li>
+                    <li>
+                        <a href="/contact"
+                            class="flex bg-green hover:bg-light-green text-cream px-3 py-1 rounded-full w-fit">Contact &
+                            Book</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-dropdown">
-                    <a href="javascript:void(0)" class="nav-dropdown-name">About</a>
-                    <div class="nav-dropdown-content">
-                        <a href="/meet-dr-jethani" class="nav-dropdown-link">Meet Dr. Kamlesh Jethani</a>
-                        <a href="/payment" class="nav-dropdown-link">Insurance and Payment</a>
-                    </div>
-                </li>
-                <li class="nav-dropdown">
-                    <a href="javascript:void(0)" class="nav-dropdown-name">Services</a>
-                    <div class="nav-dropdown-content">
-                        <a href="/cosmetic-whitening" class="nav-dropdown-link">Cosmetic Whitening</a>
-                        <a href="/cosmetic-dentistry" class="nav-dropdown-link">Cosmetic Dentistry & Bonding</a>
-                        <a href="/implants-bridges" class="nav-dropdown-link">Dental Implants & Bridges</a>
-                        <a href="/natural-fillings" class="nav-dropdown-link">Natural Color Fillings</a>
-                        <a href="/pediatric-dentistry" class="nav-dropdown-link">Pediatric Dentistry</a>
-                        <a href="/soft-tissue" class="nav-dropdown-link">Soft Tissue Management</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a href="/forms" class="nav-link">Patient Forms</a></li>
-                <li class="nav-item"><a href="/contact" class="button">Contact & Book</a></li>
-            </ul>
-            <button class="nav-menu-icon" onpointerdown="toggleMenu()">&#9776;</button>
         </nav>
-
-        <section class="accent two-col"></section>
     </div>
 </body>
 
