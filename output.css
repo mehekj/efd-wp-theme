@@ -1394,10 +1394,6 @@ video {
   gap: 1.25rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2061,11 +2057,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -2594,10 +2585,6 @@ video {
     display: none;
   }
 
-  .md\:h-8{
-    height: 2rem;
-  }
-
   .md\:w-auto{
     width: auto;
   }
@@ -2612,10 +2599,6 @@ video {
 
   .md\:items-center{
     align-items: center;
-  }
-
-  .md\:gap-5{
-    gap: 1.25rem;
   }
 
   .md\:normal-case{
