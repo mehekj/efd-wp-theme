@@ -748,6 +748,14 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.-mt-3{
+  margin-top: -0.75rem;
+}
+
+.-mt-1{
+  margin-top: -0.25rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2174,6 +2182,11 @@ video {
   line-height: 1rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2715,6 +2728,11 @@ video {
 
   .sm\:text-center{
     text-align: center;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:underline{
