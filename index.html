@@ -9,16 +9,16 @@
     <script src="./index.js"></script>
 </head>
 
-<body class="font-sans bg-light-blue text-green">
-    <div class="container mx-auto px-5 max-w-screen-xl min-w-[400px]">
-        <nav class="bg-light-blue flex flex-wrap items-end justify-between py-8">
+<body class="font-sans bg-light-blue text-green font-light">
+    <div class="w-full fixed">
+        <nav
+            class="bg-light-blue flex flex-wrap items-end justify-between py-8 z-10 container mx-auto px-5 max-w-screen-xl min-w-[450px]">
             <a href="/" class="flex items-center gap-5 rtl:space-x-reverse">
                 <img src="./img/diversity_1.svg" class="h-8 mt-[-2px]" alt="heart with family icon" />
-                <span class="text-xl font-bold">Englewood Family
-                    Dentistry</span>
+                <h1 class="text-2xl font-bold">Englewood Family
+                    Dentistry</h1>
             </a>
-            <button
-                class="text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none active:outline-none"
+            <button class="text-sm rounded-lg lg:hidden focus:outline-none active:outline-none"
                 onpointerdown="toggleMenu()">
                 <img src="./img/menu.svg" class="h-8" alt="open menu icon" id="open-menu" />
                 <img src="./img/close.svg" class="h-8 hidden" alt="close menu icon" id="close-menu" />
@@ -32,7 +32,7 @@
                                 src="./img/expand_more.svg" class="h-6 mt-[-2px] hidden lg:inline"
                                 alt="open menu icon" /></a>
                         <div class="z-10 lg:hidden lg:group-hover:block lg:absolute">
-                            <ul class="">
+                            <ul class="lg:mt-4 lg:bg-cream lg:p-4">
                                 <li>
                                     <a href="/meet-dr-jethani" class="flex hover:text-light-green">Meet Dr. Kamlesh
                                         Jethani</a>
@@ -49,7 +49,7 @@
                                 src="./img/expand_more.svg" class="h-6 mt-[-2px] hidden lg:inline"
                                 alt="open menu icon" /></a>
                         <div class="z-10 lg:hidden lg:group-hover:block lg:absolute">
-                            <ul class="">
+                            <ul class="lg:mt-4 lg:bg-cream lg:p-4">
                                 <li>
                                     <a href="/cosmetic-whitening" class="flex hover:text-light-green">Cosmetic
                                         Whitening</a>
@@ -85,6 +85,43 @@
                 </ul>
             </div>
         </nav>
+    </div>
+
+    <div class="pt-24 w-full">
+        <section
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center container mx-auto px-5 max-w-screen-xl min-w-[450px] h-full">
+            <div class="flex flex-col order-2 md:order-1 gap-5 pb-24 md:py-24">
+                <h2 class="font-serif font-bold text-4xl">Devoted to restoring, maintaining, and enhancing your
+                    smile.
+                </h2>
+                <a href="/contact"
+                    class="flex bg-green hover:bg-light-green text-cream px-3 py-1 rounded-full w-fit font-normal">Book
+                    Now <img src="./img/arrow_forward.svg" class="ml-2" alt="forward arrow icon" /></a>
+            </div>
+            <div class="h-full order-1 md:order-2 overflow-hidden max-h-[400px] flex">
+                <img src="img/outside.png" alt="office exterior" class="min-h-full min-w-full object-cover" />
+            </div>
+        </section>
+    </div>
+
+    <div class="w-full bg-cream py-24">
+        <section class="flex flex-col gap-5 container mx-auto px-5 max-w-screen-xl min-w-[450px] h-full">
+            <h2 class="text-blue font-serif font-bold text-4xl">Our Philosophy</h2>
+            <div class="flex flex-col gap-3 text-lg text-justify">
+                <p>Our goal is to assist you in developing an optimal strategy to achieve and maintain your oral health.
+                    This begins by focusing on your needs, desires, anxieties and any other limitations from the moment
+                    you
+                    contact our office.</p>
+                <p>We, at Englewood Family Dentistry, are trained and focused on effective listening to help each
+                    patient
+                    articulate and obtain their desired results. Our team is committed to your satisfaction with your
+                    entire
+                    experience in our practice.</p>
+                <p>Whether your dental needs are a complete exam, full mouth restorations, or something in between, we
+                    are
+                    committed to providing you with exceptional service.</p>
+            </div>
+        </section>
     </div>
 </body>
 
