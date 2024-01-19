@@ -871,6 +871,14 @@ video {
   height: 500px;
 }
 
+.h-12{
+  height: 3rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
 .max-h-\[500px\]{
   max-height: 500px;
 }
@@ -938,6 +946,18 @@ video {
 
 .grow{
   flex-grow: 1;
+}
+
+.basis-0{
+  flex-basis: 0px;
+}
+
+.basis-96{
+  flex-basis: 24rem;
+}
+
+.basis-64{
+  flex-basis: 16rem;
 }
 
 .table-auto{
@@ -2702,6 +2722,14 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:h-8{
+    height: 2rem;
+  }
+
+  .sm\:basis-auto{
+    flex-basis: auto;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2749,8 +2777,20 @@ video {
     order: 2;
   }
 
+  .md\:h-8{
+    height: 2rem;
+  }
+
   .md\:w-52{
     width: 13rem;
+  }
+
+  .md\:basis-0{
+    flex-basis: 0px;
+  }
+
+  .md\:basis-auto{
+    flex-basis: auto;
   }
 
   .md\:grid-cols-3{
