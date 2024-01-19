@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 * {
-	transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear, transform 0.2s linear;
 }
