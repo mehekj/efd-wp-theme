@@ -1163,6 +1163,10 @@ video {
   list-style-position: outside;
 }
 
+.list-disc{
+  list-style-type: disc;
+}
+
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1304,6 +1308,14 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-5{
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1512,6 +1524,25 @@ video {
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-x-8{
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-x-12{
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2880,6 +2911,14 @@ video {
 @media (min-width: 1024px){
   .lg\:absolute{
     position: absolute;
+  }
+
+  .lg\:order-2{
+    order: 2;
+  }
+
+  .lg\:order-1{
+    order: 1;
   }
 
   .lg\:mt-0{
